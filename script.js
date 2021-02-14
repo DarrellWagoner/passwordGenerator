@@ -46,7 +46,7 @@ if (lowerCase = lowerCase){
 } else {
   alert("whatever...");
 }
-
+// Password will/wont have 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
