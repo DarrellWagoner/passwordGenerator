@@ -40,13 +40,26 @@ if (specialArr = specialArr){
   alert("Guess we'll move on then.");
 }
 // Password will/wont have lowercase letters
-var lowerCase = confirm("will password have lowercase letters?");
-if (lowerCase = lowerCase){
+var lowercaseArr = confirm("will password have lowercase letters?");
+if (lowercaseArr = lowercaseArr){
   alert("Yippie!");
 } else {
   alert("whatever...");
 }
-// Password will/wont have 
+// Password will/wont have uppercase letters
+var uppercaseArr = confirm("will password have uppercase letters?");
+if (uppercaseArr = uppercaseArr){
+  alert("NICE!");
+} else {
+  alert("Booooooo");
+}
+// Password will/wont have numbers
+var numbersArr = confirm("will password have numbers?");
+if (numbersArr = numbersArr){
+  alert("Excellent (in Montgomery Burns voice)");
+} else {
+  alert("You must be anti-number");
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
