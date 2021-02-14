@@ -1,0 +1,41 @@
+// Assignment Code
+var generateBtn = document.querySelector("#generate");
+
+var lowercaseArr = "abcdefghijklmnopqrstuvwxyz";
+var UppercaseArr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numbersArr = "0123456789";
+var specialArr = "@#$%^&*()_+!:;><?/}{[]";
+var passwordLength = "";
+
+// Write password to the #password input
+
+// Password must be between 8 - 128 characters
+ 
+ 
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+
+}
+
+function generatePassword() {
+  userPassword = "";
+  passwordCharacters = "";
+}
+var passwordLength = prompt("please choose a number you want password to be in length (has to be between 8 - 128)");
+// statement if password is correct length in number//
+if (passwordLength >= 8 && passwordLength <= 128){
+  alert("Awesome!");
+} else {
+  alert("Following simple directions is hard on the brain :)");
+}
+var specialArr = prompt("Will password have special characters?")
+if (specialArr = "@#$%^&*()_+!:;><?/}{[]"){
+  alert("Cool Beans");
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
