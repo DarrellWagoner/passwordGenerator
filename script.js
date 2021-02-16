@@ -34,35 +34,34 @@ if (passwordLength >= 8 && passwordLength <= 128){
 } else {
   alert("'Following simple directions is hard on the brain' - George Washington (probably)");
 }
- if (passwordLength >= 8 && passwordLength <= 128) { password = passwordLength;
+if (passwordLength >= 8 && passwordLength <= 128) { password = passwordLength;
  
-
 // Password will/wont have special characters
 var specialArr = confirm("Will password have special characters?")
 if (specialArr = specialArr){
   alert("Cool Beans");
-} else {
+  } else {
   alert("Guess we'll move on then.");
 }
 // Password will/wont have lowercase letters
 var lowercaseArr = confirm("will password have lowercase letters?");
 if (lowercaseArr = lowercaseArr){
   alert("Yippie!");
-} else {
+  } else {
   alert("whatever...");
 }
 // Password will/wont have uppercase letters
 var uppercaseArr = confirm("will password have uppercase letters?");
-if (uppercaseArr = uppercaseArr){
+  if (uppercaseArr = uppercaseArr){
   alert("NICE!");
-} else {
+  } else {
   alert("Booooooo");
 }
 // Password will/wont have numbers
 var numbersArr = confirm("will password have numbers?");
 if (numbersArr = numbersArr){
   alert("Excellent (in Montgomery Burns voice)");
-} else {
+  } else {
   alert("You must be anti-number");
 } 
 
@@ -84,7 +83,6 @@ if (lowercaseArr === true) {
  
 for (var i = 0; i < passwordLength; i++){
   userPassword += passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
-
  }
 
 // Add event listener to generate button
