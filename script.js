@@ -60,11 +60,11 @@ var uppercaseArr = confirm("will password have uppercase letters?");
 // Password will/wont have numbers
 var numbersArr = confirm("will password have numbers?");
 if (numbersArr = numbersArr){
-  alert("Excellent (in Montgomery Burns voice)");
+  alert("Great!");
   } else {
-  alert("You must be anti-number");
+  alert("oh well...");
 } 
-
+//conditionals 
 if (numbersArr === true){
   passwordCharacters += numbersArr;
 }
@@ -77,13 +77,14 @@ if (uppercaseArr === true) {
 if (lowercaseArr === true) {
   passwordCharacters += lowercaseArr;
 } else {
-  alert ("cannot give you password!!");
+  alert ("Cannot process password without proper criteria");
 }
  }
  
-for (var i = 0; i < passwordLength; i++){
-  userPassword += passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
+for (var i = 0; i < password.length; i++){
+  userPassword += passwordCharacters[Math.floor(Math.random() * passwordCharacters)];
  }
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
