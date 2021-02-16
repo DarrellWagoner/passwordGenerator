@@ -1,11 +1,13 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+
 var lowercaseArr = "abcdefghijklmnopqrstuvwxyz";
-var UppercaseArr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var uppercaseArr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbersArr = "0123456789";
-var specialArr = "@#$%^&*()_+!:;><?/}{[]";
+var specialArr ="@#$%^&*()_+!:;><?/}{[]";
 var passwordLength = "";
+
 
 // Write password to the #password input
 
@@ -32,6 +34,9 @@ if (passwordLength >= 8 && passwordLength <= 128){
 } else {
   alert("'Following simple directions is hard on the brain' - George Washington (probably)");
 }
+ if (passwordLength >= 8 && passwordLength <= 128) { password = passwordLength;
+ 
+
 // Password will/wont have special characters
 var specialArr = confirm("Will password have special characters?")
 if (specialArr = specialArr){
@@ -59,7 +64,29 @@ if (numbersArr = numbersArr){
   alert("Excellent (in Montgomery Burns voice)");
 } else {
   alert("You must be anti-number");
+} 
+
+if (numbersArr === true){
+  passwordCharacters += numbersArr;
 }
+if (specialArr === true) {
+  passwordCharacters += specialArr;
+}
+if (uppercaseArr === true) {
+  passwordCharacters += numbersArr;
+}
+if (lowercaseArr === true) {
+  passwordCharacters += lowercaseArr;
+} else {
+  alert ("cannot give you password!!");
+}
+ }
+ 
+for (var i = 0; i < passwordLength; i++){
+  userPassword += passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
+
+ }
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
