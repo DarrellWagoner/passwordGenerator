@@ -5,15 +5,11 @@ var generateBtn = document.querySelector("#generate");
 var lowercaseArr = "abcdefghijklmnopqrstuvwxyz";
 var uppercaseArr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbersArr = "0123456789";
-var specialArr ="@#$%^&*()_+!:;><?/}{[]";
+var specialArr ="@#$%^&*()_+!:;><?/}{[].,/|";
 var passwordLength = "";
 
 
 // Write password to the #password input
-
-
- 
- 
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
