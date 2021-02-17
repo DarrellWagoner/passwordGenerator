@@ -1,14 +1,13 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-
-var lowercaseArr = "abcdefghijklmnopqrstuvwxyz";
-var uppercaseArr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var numbersArr = "0123456789";
-var specialArr ="@#$%^&*()_+!:;><?/}{[].,/|";
-var passwordLength = "";
-
-
+var passwordCharacters = {
+lowercaseArr: "abcdefghijklmnopqrstuvwxyz",
+uppercaseArr: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+numbersArr: "0123456789",
+specialArr: "@#$%^&*()_+!:;><?/}{[].,/|",
+passwordLength: ""
+}
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -30,7 +29,7 @@ if (passwordLength >= 8 && passwordLength <= 128){
 } else {
   alert("'Following simple directions is hard on the brain' - George Washington (probably)");
 }
-if (passwordLength >= 8 && passwordLength <= 128) { password = passwordLength;
+if (passwordLength >= 8 && passwordLength <= 128) { passwordLength = passwordLength;
  
 // Password will/wont have special characters
 var specialArr = confirm("Will password have special characters?")
@@ -38,6 +37,7 @@ if (specialArr = specialArr){
   alert("Cool Beans");
   } else {
   alert("Guess we'll move on then.");
+  
 }
 // Password will/wont have lowercase letters
 var lowercaseArr = confirm("will password have lowercase letters?");
@@ -68,20 +68,22 @@ if (specialArr === true) {
   passwordCharacters += specialArr;
 }
 if (uppercaseArr === true) {
-  passwordCharacters += numbersArr;
+  passwordCharacters += uppercaseArr;
 }
 if (lowercaseArr === true) {
   passwordCharacters += lowercaseArr;
 } else {
   alert ("Cannot process password without proper criteria");
 }
- }
- 
-for (var i = 0; i < password.length; i++){
-  userPassword += passwordCharacters[Math.floor(Math.random() * passwordCharacters)];
- }
+
+for (var i = 0; i < passwordLength; i++){
+  passwordCharacters += userPassword = Math.floor(Math.random() * passwordCharacters.length);
+}
+
+}
 
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+return userPassword;
