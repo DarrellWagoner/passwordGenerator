@@ -54,9 +54,9 @@ function generatePassword() {
         // Password will/wont have special characters
         var isspecialArr = confirm("will password have special characters?");
         if (isspecialArr === true){
-          alert("yippe!")
+          alert("yippe! Click for your code")
         } else {
-        alert("whatever");
+        alert("ok. click for your code");
         }
       }
 
