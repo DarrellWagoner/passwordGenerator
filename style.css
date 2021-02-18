@@ -91,9 +91,10 @@ header {
   transition: 0.5s;
 }
 .btn:hover{
-  background-color: blue;
+  background-color: white;
   transition: 0.5s;
   letter-spacing: 0.1em;
+  color:hsl(360, 91%, 36%);
 }
 
 button[disabled] {
