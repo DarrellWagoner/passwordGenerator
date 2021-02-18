@@ -1,11 +1,11 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-const lowercaseArr = "abcdefghijklmnopqrstuvwxyz";
-const uppercaseArr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const numbersArr = "0123456789";
-const specialArr = "!@#$%^&*()_|}{[]:;?><,./-=+~`";
-const passwordLength = "";
+var lowercaseArr = "abcdefghijklmnopqrstuvwxyz";
+var uppercaseArr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numbersArr = "0123456789";
+var specialArr = "!@#$%^&*()_|}{[]:;?><,./-=+~`";
+var passwordLength = "";
 
 // Write password to the #password input
 function writePassword() {
@@ -56,7 +56,7 @@ function generatePassword() {
         if (isspecialArr === true){
           alert("yippe! Click for your code")
         } else {
-        alert("ok. click for your code");
+        alert("OK! click for your Code!");
         }
       }
 

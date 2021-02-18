@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kaushan+Script&family=Oi&family=Permanent+Marker&family=Reggae+One&display=swap');
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  
 }
 
 html,
@@ -91,6 +93,7 @@ header {
 .btn:hover{
   background-color: blue;
   transition: 0.5s;
+  letter-spacing: 0.1em;
 }
 
 button[disabled] {
@@ -121,6 +124,7 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+  font-family: 'Kaushan Script', cursive;
 }
 
 @media (max-width: 690px) {
