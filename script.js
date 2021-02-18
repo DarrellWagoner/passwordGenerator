@@ -1,89 +1,89 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-var passwordCharacters = {
-lowercaseArr: "abcdefghijklmnopqrstuvwxyz",
-uppercaseArr: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-numbersArr: "0123456789",
-specialArr: "@#$%^&*()_+!:;><?/}{[].,/|",
-passwordLength: ""
-}
+const lowercaseArr = "abcdefghijklmnopqrstuvwxyz";
+const uppercaseArr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const numbersArr = "0123456789";
+const specialArr = "!@#$%^&*()_|}{[]:;?><,./-=+~`";
+const passwordLength = "";
+
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
-
+    passwordText.value = password;
 }
 
 function generatePassword() {
-  userPassword = "";
-  passwordCharacters = "";
-}
-// Password must be between 8 - 128 characters
-var passwordLength = prompt("please choose a number you want password to be in length (has to be between 8 - 128)");
-// statement if password is correct length in number//
-if (passwordLength >= 8 && passwordLength <= 128){
-  alert("Awesome!");
-} else {
-  alert("'Following simple directions is hard on the brain' - George Washington (probably)");
-}
-if (passwordLength >= 8 && passwordLength <= 128) { passwordLength = passwordLength;
- 
-// Password will/wont have special characters
-var specialArr = confirm("Will password have special characters?")
-if (specialArr = specialArr){
-  alert("Cool Beans");
-  } else {
-  alert("Guess we'll move on then.");
-  
-}
-// Password will/wont have lowercase letters
-var lowercaseArr = confirm("will password have lowercase letters?");
-if (lowercaseArr = lowercaseArr){
-  alert("Yippie!");
-  } else {
-  alert("whatever...");
-}
-// Password will/wont have uppercase letters
-var uppercaseArr = confirm("will password have uppercase letters?");
-  if (uppercaseArr = uppercaseArr){
-  alert("NICE!");
-  } else {
-  alert("Booooooo");
-}
-// Password will/wont have numbers
-var numbersArr = confirm("will password have numbers?");
-if (numbersArr = numbersArr){
-  alert("Great!");
-  } else {
-  alert("oh well...");
-} 
-//conditionals 
-if (numbersArr === true){
-  passwordCharacters += numbersArr;
-}
-if (specialArr === true) {
-  passwordCharacters += specialArr;
-}
-if (uppercaseArr === true) {
-  passwordCharacters += uppercaseArr;
-}
-if (lowercaseArr === true) {
-  passwordCharacters += lowercaseArr;
-} else {
-  alert ("Cannot process password without proper criteria");
-}
+    userPassword = "";
+    passwordCharacters = "";
 
-for (var i = 0; i < passwordLength; i++){
-  passwordCharacters += userPassword = Math.floor(Math.random() * passwordCharacters.length);
-}
+    // how long will the password be?
+    var passwordLength = prompt("please choose a number you want password to be in length (has to be between 8 - 128)");
+    if (passwordLength >= 8 && passwordLength <= 128){ password.length = password
+      alert("Awesome!");
+    } else {
+      alert("'Following simple directions is hard.' - George Washington (probably)");
+    }
 
-}
+    // Password must be between 8 - 128 characters
+    if (passwordLength >= 8 && passwordLength <= 128) { password.length = passwordLength;
 
+        // Password will/wont have lowercase letters
+        var islowercaseArr = confirm("will password have lowercase letters?");
+        if (islowercaseArr === true){
+          alert("Cool Beans!");
+        } else {
+          alert("Moving on");
+        }
+        // Password will/wont have uppercase letters
+        var isuppercaseArr = confirm("will password have uppercase letters?");
+        if (isuppercaseArr === true){
+          alert("NICE!");
+        } else {
+          alert("'Boooo!");
+        }
+        // Password will/wont have numbers
+        var isnumbersArr = confirm("will password have numbers?");
+        if (isnumbersArr === true){
+          alert("Awesome!");
+        } else {
+          alert("Lets see what we ");
+        }
+        // Password will/wont have special characters
+        var isspecialArr = confirm("will password have special characters?");
+        if (isspecialArr === true){
+          alert("yippe!")
+        } else {
+        alert("whatever");
+        }
+      }
+
+    // conditionals
+    if (islowercaseArr === true) {
+        passwordCharacters += lowercaseArr;
+    }
+    if (isuppercaseArr === true) {
+        passwordCharacters += uppercaseArr;
+    }
+    if (isnumbersArr === true) {
+        passwordCharacters += numbersArr;
+    }
+    if (isspecialArr === true) {
+        passwordCharacters += specialArr;
+    } else {
+        alert("Cannot process password without proper criteria");
+    }
+    for (var i = 0; i < passwordLength; i++) {
+        userPassword += passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
+    }
+    // console.log(userPassword);
+    return userPassword;
+}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-return userPassword;
+
+
