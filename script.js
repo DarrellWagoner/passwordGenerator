@@ -22,43 +22,32 @@ function generatePassword() {
     // how long will the password be?
     var passwordLength = prompt("please choose a number you want password to be in length (has to be between 8 - 128)");
     if (passwordLength >= 8 && passwordLength <= 128){ password.length = password
-      alert("Awesome! 🧙");
-    } else {
-      alert("🥸 'Following simple directions is hard.' - George Washington (probably)");
-    }
 
+    } 
     // Password must be between 8 - 128 characters
     if (passwordLength >= 8 && passwordLength <= 128) { password.length = passwordLength;
 
         // Password will/wont have lowercase letters
-        var islowercaseArr = confirm("will password have lowercase letters?");
-        if (islowercaseArr === true){
-          alert("🙌");
-        } else {
-          alert("Moving on 🛺");
-        }
+        var islowercaseArr = confirm("⬇️ will password have lowercase letters ⬇️");
+        
+      
         // Password will/wont have uppercase letters
-        var isuppercaseArr = confirm("will password have uppercase letters?");
-        if (isuppercaseArr === true){
-          alert("NICE!👏");
-        } else {
-          alert("👎");
-        }
+        var isuppercaseArr = confirm("⬆️ will password have uppercase letters ⬆️");
+        
+        
         // Password will/wont have numbers
-        var isnumbersArr = confirm("will password have numbers?");
-        if (isnumbersArr === true){
-          alert("Awesome! 👍");
-        } else {
-          alert("🤷");
-        }
+        var isnumbersArr = confirm("#️⃣ will password have numbers #️⃣");
+        
+        
         // Password will/wont have special characters
-        var isspecialArr = confirm("will password have special characters?");
-        if (isspecialArr === true){
-          alert("😀 Click for your Code!")
+        var isspecialArr = confirm("👏 will password have special characters 🎉");
+        
         } else {
-        alert("🤦 click for your Code!");
+          alert("🚫 Cannot process password without proper criteria 🚫"); return;
         }
-      }
+        
+      
+      
 
     // conditionals
     if (islowercaseArr === true) {
@@ -72,9 +61,7 @@ function generatePassword() {
     }
     if (isspecialArr === true) {
         passwordCharacters += specialArr;
-    } else {
-        alert("🚫 Cannot process password without proper criteria");
-    }
+    } 
     for (var i = 0; i < passwordLength; i++) {
         userPassword += passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
     }
