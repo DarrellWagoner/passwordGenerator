@@ -20,7 +20,7 @@ function generatePassword() {
     passwordCharacters = "";
 
     // how long will the password be?
-    var passwordLength = prompt("please choose a number you want password to be in length (has to be between 8 - 128)");
+    var passwordLength = prompt("please choose a number you want password to be in length (must be between 8 - 128)");
     if (passwordLength >= 8 && passwordLength <= 128){ password.length = password
 
     } 
@@ -37,6 +37,7 @@ function generatePassword() {
         
         // Password will/wont have numbers
         var isnumbersArr = confirm("#️⃣ will password have numbers #️⃣");
+    
         
         
         // Password will/wont have special characters
