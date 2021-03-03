@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap');
 
 *,
 *::before,
@@ -40,18 +40,19 @@ header {
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: yellow;
+  color: rgb(197, 61, 197);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
-  border: 3px dashed rgb(35,165,165);
+  border: 5px dashed rgb(35,165,165);
   
 }
 #password {
   color: red;
-  font-size: 14px;
-  font-weight: 800;
+  
+  font-size: 45px;
+  font-weight: 700;
 }
 .card-header::after {
   content: " ";
