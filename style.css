@@ -17,7 +17,8 @@ body,
 
 body {
   font-family: 'Roboto Mono', monospace;
-  background-color: #f9fbfd;
+  background-color: #222;
+  text-transform: lowercase;
 }
 
 .wrapper {
@@ -30,26 +31,33 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: yellow;
+  
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: #222;
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: yellow;
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  border: 3px dashed rgb(35,165,165);
+  
 }
-
+#password {
+  color: red;
+  font-size: 14px;
+  font-weight: 800;
+}
 .card-header::after {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #222;
   height: 2px;
 }
 
@@ -65,7 +73,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #222;
   height: 2px;
 }
 
@@ -77,8 +85,8 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
-  border-radius: 25px;
+  background-color: #222;
+  border: 3px dotted rgb(197, 61, 197);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
   color: hsl(0, 0%, 100%);
@@ -92,15 +100,15 @@ header {
   transition: 0.5s;
 }
 .btn:hover{
-  background-color: white;
+  border-color: red;
   transition: 0.5s;
-  letter-spacing: 0.1em;
-  color:hsl(360, 91%, 36%);
+  letter-spacing: 0.05em;
+  color:yellow;
 }
 
 button[disabled] {
   cursor: default;
-  background: #c0c7cf;
+  background: yellow;
 }
 
 .float-right {
@@ -122,11 +130,13 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px dashed yellow;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
   font-family: 'Roboto Mono', monospace;
+  background-color: #222;
+
 }
 
 @media (max-width: 690px) {

@@ -47,9 +47,6 @@ function generatePassword() {
           alert("🚫 Cannot process password without proper criteria 🚫"); return;
         }
         
-      
-      
-
     // conditionals
     if (islowercaseArr === true) {
         passwordCharacters += lowercaseArr;
